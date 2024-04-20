@@ -1,0 +1,42 @@
+/* 背景渐变 */
+#web_bg{
+    /*粉白蓝*/
+    background-image: linear-gradient(-225deg, #d6badf 0%, #B8DCFF 48%, #58abf3 100%);
+}
+/* 页脚footer */
+#footer {
+    /* 与背景渐变效果一致*/
+    background-image: linear-gradient(-225deg, #d6badf 0%, #B8DCFF 20%, #58abf3 100%);
+}
+
+#footer:before {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*全局背景*/
+/* 首页文章栏背景透明 */
+#recent-posts>.recent-post-item,.layout_page>div:first-child:not(.recent-posts),.layout_post>#page,.layout_post>#post,.read-mode .layout_post>#post {
+    background: var(--light_bg_color)
+}
+
+/* 侧边栏透明 */
+#aside-content .card-widget {
+    background: var(--light_bg_color)
+}
+
+/*哔哩哔哩视频适配*/
+.aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+  margin: 3% auto;
+  text-align: center;
+}
+.aspect-ratio iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
